@@ -70,7 +70,7 @@ app.put("/users/:id", (req, res, next)=> {
 })
 
 app.all("*", (req, res, next) => {
-    res.sendfile(path.resolve(".public/dist/index.html")) // <- check if path is right
+    res.sendfile(path.resolve("public/dist/index.html")) // <- check if path is right
 })
 
 //start port
